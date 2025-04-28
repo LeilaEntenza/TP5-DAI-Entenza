@@ -15,6 +15,6 @@ app.get('/fecha-completa', (req, res)=>{
 })
 
 app.use((req, res, next) => {
-    res.status(404).send(":(");
+    res.status(404).send('<img src="https://http.cat/404>');
 })
 export default app;
