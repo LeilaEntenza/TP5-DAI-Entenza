@@ -14,4 +14,7 @@ app.get('/fecha-completa', (req, res)=>{
     res.send(fecha.toLocaleDateString());
 })
 
+app.use((req, res, next) => {
+    res.status(404).send(":(");
+})
 export default app;
